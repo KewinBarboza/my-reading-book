@@ -1,7 +1,7 @@
 import { useSignal, $, useVisibleTask$ } from "@builder.io/qwik"
 import type { Book, Library } from "~/interfaces"
 import { filterBooksStorageDB, minMaxPage } from "~/utils"
-import books from "./../../../books.json"
+import books from "~/db/books.json"
 
 const pages = minMaxPage(books.library)
 
